@@ -3,3 +3,6 @@
 
 # Ignore .csv file(s)
 *.csv
+
+# Ignore database directory
+*/retail_sales_data/*
