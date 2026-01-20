@@ -5,5 +5,5 @@
 *.csv
 
 # Ignore database directory
-*/retail_sales_data/*
+# */retail_sales_data/*
 retail_sales_data/
