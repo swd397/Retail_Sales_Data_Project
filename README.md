@@ -11,13 +11,16 @@
 
 ### Build Status
 
- Added the dataset required for the project.
+ Added the dataset required for the project
+ Created a Docker Compose file to run Postgresql and PgAdmin services as containers
+ Created a Dockerfile to build a Python script image and defined the Python application service in the docker compose file
+ Wrote a Python ingestion script to upload the data from csv to the PG database using Pandas library and SQLAlchemy as the SQL toolkit
 
 ### Tech Stack
 
  - **Programming Language:** Python
  - **Database:** PostgreSQL
- - **Tools:** Docker | Jupyter Notebook | PGAdmin 
+ - **Tools:** Docker | PGAdmin 
  
 ### System Requirements
  
