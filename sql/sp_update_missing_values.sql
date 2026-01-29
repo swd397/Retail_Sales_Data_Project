@@ -4,9 +4,7 @@ CREATE OR REPLACE PROCEDURE update_missing_values (source_tbl_name VARCHAR, cate
 LANGUAGE plpgsql 
 AS $$
 BEGIN
-    -- Use dynamic SQL to construct and execute the UPDATE statement.
-    -- The source table name and the string value must be concatenated into the query string using %I and %L respectively.
-    EXECUTE format('
+	EXECUTE format('
         UPDATE sales_data sd
         SET 
             item_code = t.item_code, 

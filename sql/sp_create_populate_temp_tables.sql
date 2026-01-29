@@ -4,9 +4,7 @@ CREATE OR REPLACE PROCEDURE create_populate_temp_tables (tbl_name VARCHAR, categ
 LANGUAGE plpgsql 
 AS $$
 BEGIN
-    -- Use dynamic SQL to construct and execute the UPDATE statement.
-    -- The source table name and the string value must be concatenated into the query string using %I and %L respectively.
-    EXECUTE format('
+	EXECUTE format('
     CREATE TEMP TABLE %I AS 
     SELECT 
     		item_code,
