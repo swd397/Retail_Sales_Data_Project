@@ -93,7 +93,7 @@
  docker compose down
  ```
  
- For detailed explanation on the project and analysis, refer [here](Project_Explanaion.md).
+ For detailed explanation on the project and analysis, refer [here](Project_Explanation.md).
   
 ### Acknowledgements
  
