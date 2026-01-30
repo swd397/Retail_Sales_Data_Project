@@ -335,6 +335,9 @@ GROUP BY
 ORDER BY
   extract('year' FROM trans_date);
   ```
+ ![Sales Total](images/sales_total.png)
+ ![Sales Total Graph](images/sales_total_graph.png)
+ 
   2. Calculation of growth rate
  ```sql
 SELECT
@@ -353,6 +356,8 @@ FROM
       extract('year' FROM trans_date)
   ) yearly_sales_data;
   ```
+ ![Growth Rate](images/growth_rate.png)
+ 
  3. Identify best-selling products and categores 
  ```sql
 --Best Selling Product
@@ -381,6 +386,8 @@ ORDER BY
   sum(total_price) DESC
 LIMIT 1;
  ```
+ ![Best Selling Category](images/best_selling_categ.png)
+ 
  4. Identify peak shopping days
  ```sql
 SELECT
@@ -393,7 +400,8 @@ GROUP BY
 ORDER BY 2 DESC
 LIMIT 10;
  ```
-
+ ![Peak Shopping Days](images/peak_shopping_days.png)
+ 
  5. Calculate customer purchase frequency
  ```sql
 SELECT
@@ -405,6 +413,7 @@ GROUP BY
   extract('year' FROM trans_date)
 ORDER BY 1, 2 DESC;
  ``` 
+ ![Customer Purchase Frequency](images/cust_purchase_frequency.png)
  
  To exit, logout from PgAdmin and exit all the docker containers with the below prompt.
  ```bash
